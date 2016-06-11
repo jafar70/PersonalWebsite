@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSUJ6olxoBg0rPfw4IdD1h8M92WZY1nKt4CGNv-lq1hE4yNDzKg">
+
+
+    <title>Jafar Salami</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" style="color:#ff6600;">Jafar Salami</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+          <a href="/portfolio" class="dropdown-toggle active"class="active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/cusu">Coventry University Student Union</a></li>
+            <li><a href="/fdm">Real World Project- FDM</a></li>
+            <li><a href="/jcci">JCCI Zion Chapel</a></li>
+            <li><a href="/kobe">Kobe Bryant</a></li>
+            <li><a href="/oddfuture">Odd Future Fan Club</a></li>
+            <li><a href="/westfield">Westfield London</a></li>
+          </ul>
+        </li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    <div class="jumbotron jumbotron-special2">
+      <div class="container">
+        <center><h1>Portfolio</h1></center>
+      </div>
+    </div>
+    <div class="container">
+            <div class = "col-sm-6 col-md-4">
+              <div class="pic">
+              <a href = "/cusu" class = "thumbnail">
+                 <img src = "https://pbs.twimg.com/profile_images/667005162528096258/W2KN70R7.jpg" alt = "Generic placeholder thumbnail">
+              </a>
+              </div>
+            </div>
+              
+           <div class = "col-md-4">
+             <div class="pic">
+              <a href = "/fdm" class = "thumbnail">
+                 <img src = "https://pbs.twimg.com/profile_images/669570933313638401/8YJYHIfh.jpg" alt = "Generic placeholder thumbnail">
+              </a>
+              </div>
+           </div>
+          
+           
+           <div class = " col-md-4">
+             <div class="pic">
+              <a href = "/jcci" class = "thumbnail">
+                 <img src = "https://pbs.twimg.com/profile_images/685737964392026112/avPbwBKP.png" alt = "Generic placeholder thumbnail">
+              </a>
+              </div>
+           </div>
+    </div>
+    <div class="container">
+           <div class = " col-md-4">
+             <div class="pic">
+              <a href = "/kobe" class = "thumbnail">
+                 <img src = "https://pbs.twimg.com/profile_images/456750531969429504/THDSgIjK.jpeg" alt = "Generic placeholder thumbnail">
+              </a>
+              </div>
+           </div>
+           
+           <div class = " col-md-4">
+             <div class="pic">
+              <a href = "/oddfuture" class = "thumbnail">
+                 <img src = "https://lh5.ggpht.com/V8Ux11NFC-U7EULdXcjo96KGD_MaAgHUAOfKB6JTVxJhqnw34IGaDbGozEB7GahPIPY" alt = "Generic placeholder thumbnail">
+              </a>
+              </div>
+           </div>
+           
+           <div class = "col-md-4">
+             <div class="pic">
+              <a href = "/westfield" class = "thumbnail">
+                 <img src = "http://designraven.com/img/projects/westfield/icon.png" alt = "Generic placeholder thumbnail">
+              </a> 
+              </div>
+           </div>
+           
+    </div>       
+              <footer>
+             
+            <div class="container">
+              <center> <hr>
+                  <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
+                  <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://www.facebook.com/jafar.salami.35" style="color:white;">Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
+                  <p>&copy; Created by Ja'far Salami</p>
+              </center>
+            </div>
+          </footer> 
+          
+          
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  </body>
+</html>

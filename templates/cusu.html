@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSUJ6olxoBg0rPfw4IdD1h8M92WZY1nKt4CGNv-lq1hE4yNDzKg">
+
+
+    <title>Jafar Salami</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" style="color:#ff6600;">Jafar Salami</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+          <a href="/portfolio" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="active"><a href="/cusu">Coventry University Student Union</a></li>
+            <li><a href="/fdm">Real World Project- FDM</a></li>
+            <li><a href="/jcci">JCCI Zion Chapel</a></li>
+            <li><a href="/kobe">Kobe Bryant</a></li>
+            <li><a href="/oddfuture">Odd Future Fan Club</a></li>
+            <li><a href="/westfield">Westfield London</a></li>
+          </ul>
+        </li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    
+     <div class="jumbotron jumbotron-special2">
+      <div class="container">
+        <center><h1>Coventry University Student Union <a href="/fdm" style="color:#ff6600;"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></h1></center>
+      </div>
+    </div>
+
+    <div class="container">
+      <center><img src="{{ url_for('static', filename='img/cusu.jpg') }}" class="img-responsive"></img></center>
+    </div>
+    <div class="container">
+      <h2 style="text-align:center">205CDE Submission – Coventry University Student Union </h>
+      <br>
+      <h3><a href="http://jafar70.pythonanywhere.com/" style="color:#ff6600;">Visit Website</a></h3>
+      <p style="font-size:17px;">For my 205CDE (Developing the Modern Web) module I was given the task to create a website about any chosen topic or organisation. I decided to make a website about Coventry University Student Union. The main reason I decided to create a website about the student union is because I believe that the current Coventry University Student Union could have a simpler and better designed website as it can hard to find the information you want on the current website.<br><br> The website was developed with in the Flask and Bootstrap framework so the website fully responsive. The website had to include a database so I made a web app within the website that allows the users to add a student to the database, add a grade to a student on the database and find the student on the database using the student ID. </p>
+      <p style="font-size:17px;">Technologies I used:
+      <ul>
+            <li style="font-size:17px;"><span>HTML</span></li>
+            <li style="font-size:17px;"><span>CSS</span></li>
+            <li style="font-size:17px;"><span>JavaScript</span></li>
+            <li style="font-size:17px;"><span>Bootstrap</span></li>
+            <li style="font-size:17px;"><span>Python (Flask)</span></li>
+            <li style="font-size:17px;"><span>SQL</span></li>
+      </ul>
+      </p>
+      <h3>Coursework Grade: 68.57% (2:1)</h3>
+      <h3><a href="https://github.com/jafar70/cw" style="color:#ff6600;">Source Code</a></h3>
+    </div>
+    
+     <footer>
+             
+            <div class="container">
+              <center> <hr>
+                  <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
+                  <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://www.facebook.com/jafar.salami.35" style="color:white;">Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
+                  <p>&copy; Created by Ja'far Salami</p>
+              </center>
+            </div>
+          </footer> 
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>    
+  </body>
+</html>
