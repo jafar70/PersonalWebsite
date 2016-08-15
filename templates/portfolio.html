@@ -11,7 +11,7 @@
 
 
     <title>Jafar Salami</title>
-
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     
@@ -23,104 +23,305 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+             <i class="fa fa-bars"></i> MENU
           </button>
           <a class="navbar-brand" href="/" style="color:#ff6600;">Jafar Salami</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-left">
             <li><a href="/">Home</a></li>
-            <li class="dropdown">
-          <a href="/portfolio" class="dropdown-toggle active"class="active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/cusu">Coventry University Student Union</a></li>
-            <li><a href="/fdm">Real World Project- FDM</a></li>
-            <li><a href="/jcci">JCCI Zion Chapel</a></li>
-            <li><a href="/kobe">Kobe Bryant</a></li>
-            <li><a href="/oddfuture">Odd Future Fan Club</a></li>
-            <li><a href="/westfield">Westfield London</a></li>
-          </ul>
-        </li>
+            <li class="active"><a href="/portfolio">Portfolio</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/jafar70"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/jafarosalami"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/JafarSalami"><i class="fa fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
-    <div class="jumbotron jumbotron-special2">
-      <div class="container">
-        <center><h1>Portfolio</h1></center>
-      </div>
+    
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+    
+    <div id="parallax-aboutus" class="parallax-container aboutusPara" style="min-height: 50px;margin-bottom:20px;" data-parallax="scroll" data-bleed="10" data-image-src="{{ url_for('static', filename='img/portfolio-wallpaper.jpg') }}" data-natural-width="750" data-natural-height="763">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1>Portfolio</h1>
+            </div>
+          </div>
+        </div>
+        <br>
     </div>
+    
+    <br>
+    
     <div class="container">
-            <div class = "col-sm-6 col-md-4">
-              <div class="pic">
-              <a href = "/cusu" class = "thumbnail">
-                 <img src = "https://pbs.twimg.com/profile_images/667005162528096258/W2KN70R7.jpg" alt = "Generic placeholder thumbnail">
-              </a>
+      <p class="text text-center">Hopefully you like some of my projects which showcases a selection of the web design and front end development skills I have acquired over the years. If so, please get in touch at <a href="mailto:jafsalami@hotmail.co.uk">jafsalami@hotmail.co.uk</a> or by completing the contact form <a href="/contact">here</a></p>
+    </div>
+    
+    <br> 
+    
+    <div class="container">
+    	<ul class="tabs">
+    		<li class="tab-link current" data-tab="tab-1">All</li>
+    		<li class="tab-link" data-tab="tab-2">Personal</li>
+    		<li class="tab-link" data-tab="tab-3">University Projects</li>
+    		<li class="tab-link" data-tab="tab-4">App</li>
+    	</ul>
+    	<div id="tab-1" class="tab-content current">
+    		<div class="container">
+            <div class = "col-md-3 portfolioimg">
+              <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/photo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Mann's Solutions</h2>
+                 <a class="info" href="/mannssolutions">see project details</a>
               </div>
             </div>
-              
-           <div class = "col-md-4">
-             <div class="pic">
-              <a href = "/fdm" class = "thumbnail">
-                 <img src = "https://pbs.twimg.com/profile_images/669570933313638401/8YJYHIfh.jpg" alt = "Generic placeholder thumbnail">
-              </a>
+            </div>
+            
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/niyatilogo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Niyati</h2>
+                 <a class="info" href="/niyati">see project details</a>
               </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/Cloud9logo.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Cloud 9</h2>
+                 <a class="info" href="/cloud9">see project details</a>
+              </div>
+            </div>
            </div>
           
-           
-           <div class = " col-md-4">
-             <div class="pic">
-              <a href = "/jcci" class = "thumbnail">
-                 <img src = "https://pbs.twimg.com/profile_images/685737964392026112/avPbwBKP.png" alt = "Generic placeholder thumbnail">
-              </a>
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/starfighterlogo.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>starfighter.io</h2>
+                 <a class="info" href="/starfighter">see project details</a>
               </div>
+            </div>
+           </div>
+           
+      </div>
+    <div class="container">
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/jagslogo.jpeg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Jags Driving School</h2>
+                 <a class="info" href="/jagsdrivingschool">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/doowapplogo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>DooWapp</h2>
+                 <a class="info" href="/doowapp">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/visdatalogo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Visdata</h2>
+                 <a class="info" href="/visdata">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/cusulogo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Coventry University Student Union</h2>
+                 <a class="info" href="/cusu">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+    </div>     
+    
+    <div class="container">
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/fdmlogo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>FDM</h2>
+                 <a class="info" href="/fdm">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/churchlogo.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>JCCI</h2>
+                 <a class="info" href="/jcci">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/westfieldlogo.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Westfield</h2>
+                 <a class="info" href="/westfield">see project details</a>
+              </div>
+            </div>
            </div>
     </div>
-    <div class="container">
-           <div class = " col-md-4">
-             <div class="pic">
-              <a href = "/kobe" class = "thumbnail">
-                 <img src = "https://pbs.twimg.com/profile_images/456750531969429504/THDSgIjK.jpeg" alt = "Generic placeholder thumbnail">
-              </a>
+    	</div>
+    	<div id="tab-2" class="tab-content">
+    		 <div class="container">
+            <div class = "col-md-3 portfolioimg">
+              <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/photo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Mann's Solutions</h2>
+                 <a class="info" href="/mannssolutions">see project details</a>
               </div>
-           </div>
-           
-           <div class = " col-md-4">
-             <div class="pic">
-              <a href = "/oddfuture" class = "thumbnail">
-                 <img src = "https://lh5.ggpht.com/V8Ux11NFC-U7EULdXcjo96KGD_MaAgHUAOfKB6JTVxJhqnw34IGaDbGozEB7GahPIPY" alt = "Generic placeholder thumbnail">
-              </a>
-              </div>
-           </div>
-           
-           <div class = "col-md-4">
-             <div class="pic">
-              <a href = "/westfield" class = "thumbnail">
-                 <img src = "http://designraven.com/img/projects/westfield/icon.png" alt = "Generic placeholder thumbnail">
-              </a> 
-              </div>
-           </div>
-           
-    </div>       
-              <footer>
-             
-            <div class="container">
-              <center> <hr>
-                  <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
-                  <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://www.facebook.com/jafar.salami.35" style="color:white;">Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
-                  <p>&copy; Created by Ja'far Salami</p>
-              </center>
             </div>
-          </footer> 
+            </div>
+            
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/niyatilogo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Niyati</h2>
+                 <a class="info" href="/niyati">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/Cloud9logo.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Cloud 9</h2>
+                 <a class="info" href="/cloud9">see project details</a>
+              </div>
+            </div>
+           </div>
+          
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/starfighterlogo.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>starfighter.io</h2>
+                 <a class="info" href="/starfighter">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+      </div>
+    <div class="container">
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/jagslogo.jpeg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Jags Driving School</h2>
+                 <a class="info" href="/jagsdrivingschool">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/doowapplogo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>DooWapp</h2>
+                 <a class="info" href="/doowapp">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/visdatalogo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Visdata</h2>
+                 <a class="info" href="/visdata">see project details</a>
+              </div>
+            </div>
+           </div>
+
+           
+    </div>     
+    	</div>
+    	<div id="tab-3" class="tab-content">
+    		<div class="container">
+    		  <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/cusulogo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Coventry University Student Union</h2>
+                 <a class="info" href="/cusu">see project details</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/fdmlogo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>FDM</h2>
+                 <a class="info" href="/fdm">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           
+    		</div>
+    	</div>
+    	<div id="tab-4" class="tab-content">
+    		<div class="container">
+    		  <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/westfieldlogo.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Westfield</h2>
+                 <a class="info" href="/westfield">see project details</a>
+              </div>
+            </div>
+           </div>
+    		</div>
+    	</div>
+    </div><!-- container -->
+    <br>
+    <br>
+    <div class="footer">
+        <div class="container">
+          <center>
+              <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
+              <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/JafarSalami" style="color:white;">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+              <p>&copy; Created by Ja'far Salami</p>
+              <br>
+          </center>
+        </div>
+      </div>
           
           
     <!-- Bootstrap core JavaScript
@@ -129,5 +330,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/parallax.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>

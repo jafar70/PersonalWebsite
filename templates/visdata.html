@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSUJ6olxoBg0rPfw4IdD1h8M92WZY1nKt4CGNv-lq1hE4yNDzKg">
+
+
+    <title>Jafar Salami</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+             <i class="fa fa-bars"></i> MENU
+          </button>
+          <a class="navbar-brand" href="/" style="color:#ff6600;">Jafar Salami</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/jafar70"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/jafarosalami"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/JafarSalami"><i class="fa fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    
+    <div class="jumbotron jumbotron-special2">
+      <div class="container">
+        <center><h1><a href="/doowapp" style="color:#ff6600;"><i class="fa fa-arrow-left" aria-hidden="true" style="float:left;"></i></a>Visdata<a href="/cusu" style="color:#ff6600;"><i class="fa fa-arrow-right" aria-hidden="true" style="float:right;"></i></a></h1></center>
+      </div>
+    </div>
+
+    <div class="container">
+      <center><img src="{{ url_for('static', filename='img/visdatacomputer.jpg') }}" class="img-responsive"></img></center>
+    </div>
+    
+    <div class="jafar">
+    <div class="container">
+      <p class="aboutmeheading" style="text-align:center; color:black;">Personal Project - Visdata Website </p>
+      <p class="textbody">Visdata supply software solutions to help manufacturing companies who want to satisfy their customers’ needs, grow their business and take advantage of new opportunities through increased productivity. Typically, Visdata works with ambitious owners and managers who want their business to stand out from and outperform other manufacturers. </p>
+      <p class="textbody">Visdata current looks a bit dated so I decided to design and develop a new website for Visdata as a personal project. Before I started developing the website I looked at other websites of companies in the same industry as Visdata so I can get an understanding of what features should I include on the website. I found that similar websites included interactive features such as diagrams and YouTube videos to present information to the visitors. Therefore, I made sure included interactive features to give out more information and grab the attention of the user.</p>
+      <p class="textbody">Technologies I used:
+      <ul>
+        <li><span>HTML</span></li>
+        <li><span>CSS</span></li>
+        <li><span>JavaScript (JQuery)</span></li>
+        <li><span>Bootstrap</span></li>
+        <li><span>Python (Flask)</span></li>
+      </ul>
+      </p>
+      <br>
+      <h3 class="text-center"><a href="#visdata" class="visit-buttons">Visit Website</a></h3>
+      <br>
+    </div>
+    </div>
+    
+    <div class="footer">
+          <div class="container">
+            <center>
+                <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
+                <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/JafarSalami" style="color:white;">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+                <p>&copy; Created by Ja'far Salami</p>
+                <br>
+            </center>
+          </div>
+    </div>
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>    
+  </body>
+</html>

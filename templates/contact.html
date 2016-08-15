@@ -4,90 +4,93 @@
   
   {% if success %}
     <br><br>
-    <p style="font-size:25px;">Thank you for your message. We'll get back to you shortly.</p>
+    <div class="container">
+      <p style="font-size:25px;">Thank you for your message. We'll get back to you shortly.</p>
+    </div>
   
   {% else %}  
-    <div class="jumbotron jumbotron-special2">
-      <div class="container">
-        <center><h1>Contact</h1></center>
-      </div>
-      
-    </div>
-    <div class="container">
-     <p style="font-size:20px; text-align:center; font-weight:bold;">If you have a need for a freelance web designer like myself to help you with your web project please get in touch by filling in the form below, or just click this link – jafsalami@hotmail.co.uk</p>
-     <br>
-  
-    <div class="col-md-4" >
-    {% for message in form.name.errors %}
-      <div class="flash">{{ message }}</div>
-    {% endfor %}
-    
-    {% for message in form.email.errors %}
-      <div class="flash">{{ message }}</div>
-    {% endfor %}
-    
-    {% for message in form.subject.errors %}
-      <div class="flash">{{ message }}</div>
-    {% endfor %}
-    
-    {% for message in form.message.errors %}
-      <div class="flash">{{ message }}</div>
-    {% endfor %}
-    
-    <form action="{{ url_for('contact') }}" method=post style="text-align: left;" >
-      {{ form.hidden_tag() }}
-      
-      {{ form.name.label }}
-      {{ form.name }}
-      
-      {{ form.email.label }}
-      {{ form.email }}
-      
-      {{ form.subject.label }}
-      {{ form.subject }}
-      
-      {{ form.message.label }}
-      {{ form.message }}
-      
-      {{ form.submit }}
-    </form>
-    </div>
-    
-    <div class="col-md-4">
-        <br>
-        <center>
-                    <a class="twitter-timeline"  href="https://twitter.com/JafarSalami" data-widget-id="736147641483055105">Tweets by @JafarSalami</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </center> 
-    </div>
-    
-    <div class="col-md-4">
-      <h3 style="text-align:center;">Testimonials</h3>
-      <br>
-      <i><p style="font-size:20px; text-align:center;">"Jafar is a great student and would be a great addition to any workplace" - <a href="https://www.facebook.com/businessInformationTechnology?fref=nf" style="color:#ff6600;">Stella-Maris Orim</a></p>
-      <br>
-      <p style="font-size:20px; text-align:center;">"Jafar is not only a good colleague but a great friends who would help anyone" - <span>Rashid (Classmate)</span></p>
-      <br>
-      <p style="font-size:20px; text-align:center;">"You would be lucky to have a member like Jafar on your team. He gives 100%" - <span>Bilal (Classmate)</span></p>
-      <br>
-      <p style="font-size:20px; text-align:center;"><a href="http://www.ilfordrecorder.co.uk/news/education/gcse_results_oaks_park_high_school_student_says_he_s_pleased_mum_put_on_the_pressure_1_1491706" style="color:#ff6600;">An article written about my GCSE's results</a></p>
-      </i>
-    </div>
-    
-   </div>   
-    <hr>
-      <footer>
-             
-            <div class="container">
-              <div class="col-md-12">
-              <center> 
-                  <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
-                  <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://www.facebook.com/jafar.salami.35" style="color:white;">Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
-                  <p>&copy; Created by Ja'far Salami</p>
-              </center>
-              </div>
+    <div id="parallax-aboutus" class="parallax-container aboutusPara" style="min-height: 50px;margin-bottom:20px;" data-parallax="scroll" data-bleed="10" data-image-src="{{ url_for('static', filename='img/contact-wallpaper.jpg') }}" data-natural-width="750" data-natural-height="763">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1>Contact</h1>
             </div>
-          </footer> 
+          </div>
+        </div>
+        <br>
+    </div>
+    
+    <div class="white">
+      <div class="container">
+        <br>
+        <p class="text" style="font-size:25px; text-align:center; font-weight:bold;">If you have a need for a freelance web designer like myself to help you with your web project please get in touch by filling in the form below, or just click this link – <a href="mailto:jafsalami@hotmail.co.uk" style="color:#ff6600;">jafsalami@hotmail.co.uk</a></p>
+        <br>
+      </div>
+    </div>
+    
+     <div class="jafar">
+       <div class="container">
+     
+  
+        {% for message in form.name.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+        
+        {% for message in form.email.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+        
+        {% for message in form.subject.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+        
+        {% for message in form.message.errors %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+        
+        <form action="{{ url_for('contact') }}" method=post>
+          {{ form.hidden_tag() }}
+          
+          <div class="col-md-4">
+            {{ form.name.label }}
+            {{ form.name }}
+            
+            {{ form.email.label }}
+            {{ form.email }}
+            
+            {{ form.subject.label }}
+            {{ form.subject }}
+          </div>
+          <div class="col-md-4">
+            {{ form.message.label }}
+            {{ form.message }}
+          </div>
+          
+          <div class="col-md-4">
+            <br><br>
+            {{ form.submit }}
+          </div>
+        </form>
+      </div>
+      <br>
+    </div>
+    
+    <div class="white">
+      <div class="container">
+        <center><img src="http://static1.squarespace.com/static/50d33393e4b06e38bcf5b324/t/53382bade4b0fa7f0985c8b4/1396190125590/Quotes+5.jpg?format=2500w" class="img-responsive"></img></center>
+      </div>
+    </div>
+    
+    <div class="footer">
+          <div class="container">
+            <center>
+                <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
+                <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/JafarSalami" style="color:white;">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+                <p>&copy; Created by Ja'far Salami</p>
+                <br>
+            </center>
+          </div>
+    </div>
     
   {% endif %}
 {% endblock %} 

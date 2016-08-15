@@ -11,7 +11,8 @@
 
 
     <title>Jafar Salami</title>
-
+    
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     
@@ -28,28 +29,21 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+             <i class="fa fa-bars"></i> MENU
           </button>
           <a class="navbar-brand" href="/" style="color:#ff6600;">Jafar Salami</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-left">
             <li><a href="/">Home</a></li>
-            <li class="dropdown">
-          <a href="/portfolio" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/cusu">Coventry University Student Union</a></li>
-            <li class="active"><a href="/fdm">Real World Project- FDM</a></li>
-            <li><a href="/jcci">JCCI Zion Chapel</a></li>
-            <li><a href="/kobe">Kobe Bryant</a></li>
-            <li><a href="/oddfuture">Odd Future Fan Club</a></li>
-            <li><a href="/westfield">Westfield London</a></li>
-          </ul>
-        </li>
+            <li class="active"><a href="/portfolio">Portfolio</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/jafar70"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/jafarosalami"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/JafarSalami"><i class="fa fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -57,41 +51,44 @@
     
      <div class="jumbotron jumbotron-special2">
       <div class="container">
-        <center><h1><a href="/cusu" style="color:#ff6600;"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>Real World Project- FDM<a href="/jcci" style="color:#ff6600;"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></h1></center>
+        <center><h1><a href="/cusu" style="color:#ff6600;"><i class="fa fa-arrow-left" aria-hidden="true" style="float:left;"></i></a>Real World Project- FDM<a href="/jcci" style="color:#ff6600;"><i class="fa fa-arrow-right" aria-hidden="true" style="float:right;"></i></a></h1></center>
       </div>
     </div>
 
     <div class="container">
-      <center><img src="{{ url_for('static', filename='img/fdm.jpg') }}" class="img-responsive"></img></center>
+      <center><img src="{{ url_for('static', filename='img/fdmcomputer.jpg') }}" class="img-responsive"></img></center>
     </div>
+    
+    <div class="jafar">
     <div class="container">
-      <h2 style="text-align:center">206CDE Group Submission - Data Warehousing & Visualisation Soltion </h2>
-      <br>
-      <h3><a href="http://178.62.122.13:3000/#!/data" style="color:#ff6600;">A link to the website</a></h3>
-      <p style="font-size:17px;">In this project my team members and I were tasked with creating a new way for FDM to view its data regarding areas of recruitment and career outcomes. The visualisation of the information would in its final form be anonymised but would include information regarding their origin within the UK, the university they attended and degree, their role within FDM and finally the industry sector within their first 2 years at FDM. The tool that we were tasked with creating was expected to be held within some form of data warehouse solution and that that the data held would be visualised in several different ways.</p>
-      <p style="font-size:17px;">I was chosen to be one of the prototype designers in the FDM project group. My main responsibilities were to conduct user research and evaluate user feedback, create wireframes, storyboards, user flows, process flows and site maps to effectively communicate interaction and design ideas, etc. I also created a number of different project management documentations such as a Gantt chart, risk log and meeting agendas which will make sure the project is delivered on time and within the agreed scope. I also created and presented the PowerPoint presentation we gave to FDM in the final group presentation. </p>
-      <p style="font-size:17px;">Things I gained from the project:
+      <p class="aboutmeheading" style="text-align:center; color:black;">206CDE Group Submission - Data Warehousing & Visualisation Soltion </p>
+      <p class="textbody">In this project my team members and I were tasked with creating a new way for FDM to view its data regarding areas of recruitment and career outcomes. The visualisation of the information would in its final form be anonymised but would include information regarding their origin within the UK, the university they attended and degree, their role within FDM and finally the industry sector within their first 2 years at FDM. The tool that we were tasked with creating was expected to be held within some form of data warehouse solution and that that the data held would be visualised in several different ways.</p>
+      <p class="textbody">I was chosen to be one of the prototype designers in the FDM project group. My main responsibilities were to conduct user research and evaluate user feedback, create wireframes, storyboards, user flows, process flows and site maps to effectively communicate interaction and design ideas, etc. I also created a number of different project management documentations such as a Gantt chart, risk log and meeting agendas which will make sure the project is delivered on time and within the agreed scope. I also created and presented the PowerPoint presentation we gave to FDM in the final group presentation. </p>
+      <p class="textbody">Things I gained from the project:
       <ul>
-            <li style="font-size:17px;"><span>Great design skills</span></li>
-            <li style="font-size:17px;"><span>Project Management skils</span></li>
-            <li style="font-size:17px;"><span>Problem Solving Skills</span></li>
-            <li style="font-size:17px;"><span>Teamwork skills</span></li>
+            <li><span>Great design skills</span></li>
+            <li><span>Project Management skils</span></li>
+            <li><span>Problem Solving Skills</span></li>
+            <li><span>Teamwork skills</span></li>
       </ul>
       </p>
       <h3>Coursework Grade: 65% (2:1)</h3>
-      <h3><a href="https://drive.google.com/drive/folders/0B5dMYAKMlTSwWDRTRTloRFlHeVE" style="color:#ff6600;">Project Files</a></h3>
+      <br>
+      <h3 class="text-center"><a href="https://drive.google.com/drive/folders/0B5dMYAKMlTSwWDRTRTloRFlHeVE" class="visit-buttons">Project Files</a></h3>
+      <br>
+    </div>
     </div>
     
-     <footer>
-             
-            <div class="container">
-              <center> <hr>
-                  <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
-                  <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://www.facebook.com/jafar.salami.35" style="color:white;">Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
-                  <p>&copy; Created by Ja'far Salami</p>
-              </center>
-            </div>
-          </footer> 
+    <div class="footer">
+          <div class="container">
+            <center>
+                <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
+                <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/JafarSalami" style="color:white;">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+                <p>&copy; Created by Ja'far Salami</p>
+                <br>
+            </center>
+          </div>
+    </div>
     
     
     <!-- Bootstrap core JavaScript

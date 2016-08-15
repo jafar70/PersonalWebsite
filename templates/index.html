@@ -10,14 +10,17 @@
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSUJ6olxoBg0rPfw4IdD1h8M92WZY1nKt4CGNv-lq1hE4yNDzKg">
 
     <title>Jafar Salami</title>
-
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>    
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-    
     <!-- Custom styles for this template -->
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/hover.css') }}" rel="stylesheet">    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/typed.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
   </head>
 
   <body>
@@ -27,119 +30,184 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+             <i class="fa fa-bars"></i> MENU
           </button>
           <a class="navbar-brand" href="/" style="color:#ff6600;">Jafar Salami</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-left">
             <li class="active"><a href="/">Home</a></li>
-            <li class="dropdown">
-          <a href="/portfolio" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/cusu">Coventry University Student Union</a></li>
-            <li><a href="/fdm">Real World Project- FDM</a></li>
-            <li><a href="/jcci">JCCI Zion Chapel</a></li>
-            <li><a href="/kobe">Kobe Bryant</a></li>
-            <li><a href="/oddfuture">Odd Future Fan Club</a></li>
-            <li><a href="/westfield">Westfield London</a></li>
-          </ul>
-        </li>
+            <li><a href="/portfolio">Portfolio</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/jafar70"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/jafarosalami"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/JafarSalami"><i class="fa fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
-
+    
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+    
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron jumbotron-special">
-      <div class="container">
-        <h1><b>Jafar Salami</b><br>A 3<sup>rd</sup> year Business Information Technology Student at Coventry University</h1>
-        <div class="col-md-4">
-          <img src="http://www.siminki.co.uk/wp-content/themes/adapt/images/monitor.png" class="img-responsive" alt="computers"></img>
-        </div>
-        <div class="col-md-8">
-          <br><br>
-          <p style="text-align:center;font-size:x-large;">Orignally from London but based in Coventry. I have experience working in a start-up company, small & large groups of people. I am currently looking for a graduate job as a Front End Web Developer.</p>
-          <br>
-          <center><a href="https://drive.google.com/file/d/0B5dMYAKMlTSwMjhiYkp2VG11RVE/view?usp=sharing"><button type="button" class="btn btn-primary btn-lg">View CV</button></a>&nbsp&nbsp&nbsp&nbsp<a href="/portfolio"><button type="button" class="btn btn-success btn-lg">Portfolio</button></a></center>
-        </div>
-      </div>
+    <div class="parallax-container text-center" data-parallax="scroll" data-bleed="10" data-image-src="{{ url_for('static', filename='img/wallpaper.png') }}" data-natural-width="750" data-natural-height="600">
       <br>
-      <center><img src="http://www.amandeepsingh.co.in/images/bounceuparrow.gif"></img></center>
+      <p class="slider-title" style="color:white;"><span>&nbspJafar Salami&nbsp</span></p>
+      <br>
+      <a href="#!" id="toaboutme"><img src="{{ url_for('static', filename='img/bounceuparrow.gif') }}" width="100px"></img></a>
     </div>
-
+    
+    
+    <div class="white">
     <div class="container">
       <div id="aboutme">
-         <center><h1>About Me</h1></center>
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-6">
-          <br>
-          <p style="font-size:17px;">My name is Jafar Salami. I am 20 years old and a third year Business Information Technology undergraduate at Coventry University on track to achieve a minimum of a 2:1. I am an ambitious, enthusiastic, hardworking and organised student.</p>
-          <p style="font-size:17px;">I decided to go to Coventry University because Coventry University was voted Modern University twice (2014 and 2015) by the Time and Sunday Times and ranked 15<sup>th</sup> on The Guardian’s 2016 University Guide. The University allows the students to study abroad and gain experience through paid/unpaid internships.</p>
-          <p style="font-size:17px;">I chose to study Business Information systems because today businesses are driven by the information they offer and more often than not, this is via modern systems using networked computers, the web and large scale databases. This course provides you with the technical and managerial understanding to develop and manage such information systems.</p>
-        </div>
-        <div class="col-md-6">
-          <h3>First Year University Result: 68.89% (2:1)</h3>
-          <h3>Second Year University Result: 70.39% (1<sup>st</sup>)</h3>
-          <h3>Third Year University Result: 1<sup>st</sup> (expected)</h3>
-          <p style="font-size:17px;">Aside from web development, I also have experience in developing multimedia applications primarliy using Mediator 9. The biggest of these was my final year in Sixth Form multimedia project to build multimedia application for the Westfield Shopping Centre.</p>
-          <p style="font-size:17px;">Away from the academic and work environments, I have a passion for playing Football for Coventry University 2nd team as a right back. Last season we finished 1st in the BUCS Midlands 3A league. From playing football I have developed good team work & verbal communication skills as I had to communicate to other members while playing.</p>
-       </div>
+        <br>
+         <img src="{{ url_for('static', filename='img/personalpic.jpg') }}" width="247px" height="247px" class="img-responsive center-block img-circle"></img>
+         <br>
+         <p class="aboutmeheading text-center">HELLO, I AM A 3<sup>rd</sup> YEAR BUSINESS INFORMATION TECHNOLOGY STUDENT AT COVENTRY UNIVERSITY</p>
+         <hr class="style12">
+         <p class="text text-center">My name is Jafar Salami. I am 20 years old from London, UK and a third year Business Information Technology undergraduate at Coventry University on track to achieve a minimum of a 2:1. I am an ambitious, enthusiastic, hardworking and organised student.<br>
+         I am currently looking for a graduate job as a front-end web developer.
+         <br><br>
+          First Year University Result: Second-class honours, upper division  (2:1)<br>
+          Second Year University Result: Second-class honours, upper division (2:1)<br>
+          Third Year University Result: First-class honours (1st) or Second-class honours, upper division (2:1) 
+         </p>
+         <hr class="style12">
       </div>
-      <hr>
-      <div class="row">
-      <h3 style="text-align:center;">With skills in research, design and development I can help redesign or optimise your current website so it gets more traffic or sales</h3>
+    </div>
+    </div>  
     
-      <div class="col-md-4">  
-      <div class="hvr-float">
-        <center><h3>Research</h3><i class="fa fa-search fa-5x" aria-hidden="true"></i><p style="font-size:15px;"> <br> As a freelance web designer and front end developer, I can help to identify obstacles on existing websites and assist with new start-up projects. You&#39;ll benefit from all-round industry knowledge, and the confidence of someone who&#39;s catered for both big brands and local businesses</p></center>
-      </div>
-      </div>
-      
-      <div class="col-md-4">
-      <div class="hvr-float">
-        <center><h3>Design</h3><i class="fa fa-paint-brush fa-5x" aria-hidden="true"></i><p style="font-size:15px;"><br>The success of a website is down to more than just the aesthetics. That&#39;s why I consider the objectives of your business and your customers. I can help you to create websites and printed materials that maintain consistency across your entire brand, whatever your marketing strategy entails.</p></center>
-      </div>
-      </div>
-      
-      <div class="col-md-4">
-      <div class="hvr-float">
-        <center><h3>Develop</h3><i class="fa fa-code fa-5x" aria-hidden="true"></i><p style="font-size:15px;"><br>Tablets and smart-phones are growing ever more popular, so it is vital that your site is optimised through responsive development, allowing enhanced accessibility across all platforms. I&#39;ll code your websites using the latest techniques, to help you manage your content across different devices.</p></center>
-      </div>
-      </div>
-      </div>
-      <hr>
+    <div class="parallax-container indexParallax text-center" data-parallax="scroll" data-bleed="10" data-image-src="{{ url_for('static', filename='img/black-wood-texture.jpg') }}" data-natural-width="750" data-natural-height="600">
+      <h1><strong>WHY DO I NEED A WEBSITE?</strong></h1>
+      <br>
+      <h2 style="color:white;"><span class="text-change"></span></h2>
+    </div>
+    
+    <div class="white">
       <div class="container">
-        <div class="col-md-12">
-          
-        <p class="lead">I create beautiful and responsive websites using <b>HTML / CSS / SQL / MySQL/ JavaScript / jQuery / Flask/ Bootstrap</b>. I also know <b>C++ / VBA/ Git (version control)/ PHP (working Knowledge)</b>. I have <b>well-developed numerical ability </b> and <b>experience of analysing data</b>. I have <b>great verbal and written communication skills</b>.</p>
+        <p class="aboutmeheading text-center">MY TECHNICAL SKILLS</p>
+        <hr class="style12">
+        
+        <div class="skillbar clearfix " data-percent="85%">
+        	<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+        	<div class="skillbar-bar" style="background: #e67e22;"></div>
+        	<div class="skill-bar-percent">85%</div>
+        </div> <!-- End Skill Bar -->
+        
+        <div class="skillbar clearfix " data-percent="85%">
+        	<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+        	<div class="skillbar-bar" style="background: #3498db;"></div>
+        	<div class="skill-bar-percent">85%</div>
+        </div> <!-- End Skill Bar -->
+        
+        <div class="skillbar clearfix " data-percent="70%">
+        	<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
+        	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+        	<div class="skill-bar-percent">70%</div>
+        </div> <!-- End Skill Bar -->
+        
+        <div class="skillbar clearfix " data-percent="60%">
+        	<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+        	<div class="skillbar-bar" style="background: #5a68a5;"></div>
+        	<div class="skill-bar-percent">60%</div>
+        </div> <!-- End Skill Bar -->
+        
+        <div class="skillbar clearfix " data-percent="65%">
+        	<div class="skillbar-title" style="background: #333333;"><span>Flask</span></div>
+        	<div class="skillbar-bar" style="background: #525252;"></div>
+        	<div class="skill-bar-percent">65%</div>
+        </div> <!-- End Skill Bar -->
+        
+        <div class="skillbar clearfix " data-percent="60%">
+        	<div class="skillbar-title" style="background: #27ae60;"><span>Wordpress</span></div>
+        	<div class="skillbar-bar" style="background: #2ecc71;"></div>
+        	<div class="skill-bar-percent">60%</div>
+        </div> <!-- End Skill Bar -->
+        
+        <div class="skillbar clearfix " data-percent="80%">
+        	<div class="skillbar-title" style="background: #124e8c;"><span>Git</span></div>
+        	<div class="skillbar-bar" style="background: #4288d0;"></div>
+        	<div class="skill-bar-percent">80%</div>
+        </div> <!-- End Skill Bar -->
+        <hr class="style12">
+      </div>
+    </div>
+    
+    <div class="parallax-container indexParallax text-center" data-parallax="scroll" data-bleed="10" data-image-src="{{ url_for('static', filename='img/wallpaper2.jpg') }}" data-natural-width="750" data-natural-height="600">
+      <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+      <h2><strong>"I found Jafar extremely helpful and professional and would<br> highly recommend him to anyone contemplating a new web site in the future"</strong></h2>
+      <br>
+      
+    </div>
+    
+    <div class="white">
+      <div class="container">
+        <p class="aboutmeheading text-center">LATEST PROJECTS</p>
+        <hr class="style12">
+        <p class="text text-center">Please see below for a selection of my recent work from my portfolio. Click on the images for more information on each project.</p>
+        <div class="col-md-3">
+          <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/photo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Mann's Solutions</h2>
+                 <a class="info" href="/mannssolutions">see project details</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="hovereffect">
+              <center><img class="img-responsive" src="{{ url_for('static', filename='img/Cloud9logo.png') }}" width="255px" height="255px" alt=""></center>
+              <div class="overlay">
+                 <h2>Cloud 9</h2>
+                 <a class="info" href="/cloud9">see project details</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/starfighterlogo.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>starfighter.io</h2>
+                 <a class="info" href="/starfighter">see project details</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="hovereffect">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/doowapplogo.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>DooWapp</h2>
+                 <a class="info" href="/doowapp">see project details</a>
+              </div>
+          </div>
         </div>
       </div>
+      <div class="container">
+        <hr class="style12">
       </div>
-     
-      <hr>
-      <footer>
+    </div>  
+
+    <div class="footer">
         <div class="container">
           <center>
               <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
-              <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://www.facebook.com/jafar.salami.35" style="color:white;">Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
+              <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/JafarSalami" style="color:white;">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></p>
               <p>&copy; Created by Ja'far Salami</p>
+              <br>
           </center>
         </div>
-      </footer>
-    </div> <!-- /container -->
+    </div>
 
-
+  
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/parallax.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/skillbar.js') }}"></script>
   </body>
 </html>

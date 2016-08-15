@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, flash
 from forms import ContactForm
-from flask.ext.mail import Message, Mail
+from flask_mail import Message, Mail
 import os
 
 mail = Mail()
@@ -35,14 +35,34 @@ def fdm():
 @app.route("/jcci")
 def jcci():
     return render_template("jcci.html")
-
-@app.route("/kobe")
-def kobe():
-    return render_template("kobe.html")
     
-@app.route("/oddfuture")
-def oddfuture():
-    return render_template("oddfuture.html")
+@app.route("/mannssolutions")
+def mannssolutions():
+    return render_template("mannssolutions.html")    
+
+@app.route("/niyati")
+def niyati():
+    return render_template("niyati.html")
+
+@app.route("/cloud9")
+def cloud9():
+    return render_template("c9.html")
+    
+@app.route("/jagsdrivingschool")
+def jagsdrivingschool():
+    return render_template("jags.html")
+    
+@app.route("/starfighter")
+def starfighter():
+    return render_template("starfighter.html")
+    
+@app.route("/doowapp")
+def doowapp():
+    return render_template("doowapp.html")
+    
+@app.route("/visdata")
+def visdata():
+    return render_template("visdata.html")
     
 @app.route("/westfield")
 def westfield():

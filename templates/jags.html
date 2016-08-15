@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxSUJ6olxoBg0rPfw4IdD1h8M92WZY1nKt4CGNv-lq1hE4yNDzKg">
+
+
+    <title>Jafar Salami</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+             <i class="fa fa-bars"></i> MENU
+          </button>
+          <a class="navbar-brand" href="/" style="color:#ff6600;">Jafar Salami</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/jafar70"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/jafarosalami"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/JafarSalami"><i class="fa fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    
+    <div class="jumbotron jumbotron-special2">
+      <div class="container">
+        <center><h1><a href="/starfighter" style="color:#ff6600;"><i class="fa fa-arrow-left" aria-hidden="true" style="float:left;"></i></a>Jag’s Driving School<a href="/doowapp" style="color:#ff6600;"><i class="fa fa-arrow-right" aria-hidden="true" style="float:right;"></i></a></h1></center>
+      </div>
+    </div>
+
+    <div class="container">
+      <center><img src="{{ url_for('static', filename='img/jagscomputer.jpg') }}" class="img-responsive"></img></center>
+    </div>
+    
+    <div class="jafar">
+    <div class="container">
+      <p class="aboutmeheading" style="text-align:center; color:black;">Personal Project - Jag’s Driving School Website </p>
+      <p class="textbody">Jag’s Driving School is a driving school that teaches people how to drive cars. Jag’s Driving School provides lessons in a number of different location around London.  The instructors are fully qualified, licensed and registered with the Driving Standards Agency (DSA), following strict rules and regulations laid down by them. They are also a (DSA) approved fleet trainer and provide Instructor training. </p>
+      <p class="textbody">Jag’s Driving School website was last updated in 2006 so the website is very dated so I asked the owner of Jag’s Driving School if I can create a website for his company and he gave me permission to develop a dynamic website for him. Before I started developing the website, the owner said he wanted the website to be modern, interactive and able to send enquiries from the website. So I decided to include JQuery plugins such as gmaps.js which will highlight the locations where Jag’s instructors teach. I also decided to use Flask for my back end development because I have used it to build web apps/websites in the past and it is able to send emails via the website. After the website was completed, the owner of Jag’s Driving School was very pleased with the website.</p>
+      <p class="textbody">Technologies I used:
+      <ul>
+            <li><span>HTML</span></li>
+            <li><span>CSS</span></li>
+            <li><span>JavaScript</span></li>
+            <li><span>Bootstrap</span></li>
+            <li><span>Python (Flask)</span></li>
+      </ul>
+      </p>
+      <br>
+      <h3 class="text-center"><a href="#jags" class="visit-buttons">Visit Website</a></h3>
+      <br>
+    </div>
+    </div>
+    
+    <div class="footer">
+          <div class="container">
+            <center>
+                <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
+                <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/JafarSalami" style="color:white;">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+                <p>&copy; Created by Ja'far Salami</p>
+                <br>
+            </center>
+          </div>
+    </div>
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>    
+  </body>
+</html>

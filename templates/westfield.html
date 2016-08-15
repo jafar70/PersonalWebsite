@@ -12,6 +12,7 @@
 
     <title>Jafar Salami</title>
 
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     
@@ -28,28 +29,21 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+             <i class="fa fa-bars"></i> MENU
           </button>
           <a class="navbar-brand" href="/" style="color:#ff6600;">Jafar Salami</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-left">
             <li><a href="/">Home</a></li>
-            <li class="dropdown">
-          <a href="/portfolio" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/cusu">Coventry University Student Union</a></li>
-            <li><a href="/fdm">Real World Project- FDM</a></li>
-            <li><a href="/jcci">JCCI Zion Chapel</a></li>
-            <li><a href="/kobe">Kobe Bryant</a></li>
-            <li><a href="/oddfuture">Odd Future Fan Club</a></li>
-            <li class="active"><a href="/westfield">Westfield London</a></li>
-          </ul>
-        </li>
+            <li class="active"><a href="/portfolio">Portfolio</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/jafar70"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/jafarosalami"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/JafarSalami"><i class="fa fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -57,31 +51,35 @@
     
      <div class="jumbotron jumbotron-special2">
       <div class="container">
-        <center><h1><a href="/oddfuture" style="color:#ff6600;"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>Westfield London<a href="/cusu" style="color:#ff6600;"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></h1></center>
+        <center><h1><a href="/jcci" style="color:#ff6600;"><i class="fa fa-arrow-left" aria-hidden="true" style="float:left;"></i></a>Westfield London<a href="/mannssolutions" style="color:#ff6600;"><i class="fa fa-arrow-right" aria-hidden="true" style="float:right;"></i></a></h1></center>
       </div>
     </div>
 
     <div class="container">
       <center><img src="{{ url_for('static', filename='img/westfield.jpg') }}" class="img-responsive"></img></center>
     </div>
-    <div class="container">
-      <h2 style="text-align:center"> A Level Coursework - Multimedia Application</h2> 
-      <h3><a href="https://drive.google.com/file/d/0B5dMYAKMlTSwZzBJR1ZLTENRQkE/view?usp=sharing" style="color:#ff6600;">Download App</a></h3>
-      <p style="font-size:17px;">During my final year at sixth form I undertook a yearlong multimedia application project. I chose to make a multimedia application for Westfield Stratford Shopping Centre as the topic seemed interesting but with many of the aspects being highly challenging. It involved investigating and analysing as I had to research how to create a multimedia application. It also showed my skills in planning and organising as I had to keep to schedule and due dates.</p>
-      
+    <br>
+    
+    <div class="jafar">
+      <div class="container">
+        <p class="aboutmeheading" style="text-align:center; color:black;">A Level Coursework - Multimedia Application</p>
+        <p class="textbody">During my final year of sixth form I undertook a yearlong multimedia application project. I chose to make a multimedia application about for Westfield shopping centre because I am familiar with the shopping centre and I thought creating an application for a shopping centre would be challenging. Before creating the multimedia application, I had to investigate how to create a multimedia application as I had no programming experience at that time. Therefore, I decided to use a piece of software called Motion Studio 3D which allowed you to create an application without needing to know programming. I project was completed on time and within the agreed scope. During the project I gained multimedia skills such as video & audio editing and I understood programming concepts like variables and expressions.</p>
+        <br>
+        <h3 class="text-center"><a href="https://drive.google.com/file/d/0B5dMYAKMlTSwZzBJR1ZLTENRQkE/view?usp=sharing" class="visit-buttons">Download App</a></h3>
+        <br>
+      </div>
     </div>
     
-     <footer>
-             
-            <div class="container">
-              <center> <hr>
-                  <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
-                  <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://www.facebook.com/jafar.salami.35" style="color:white;">Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i></a></p>
-                  <p>&copy; Created by Ja'far Salami</p>
-              </center>
-            </div>
-          </footer> 
-    
+    <div class="footer">
+          <div class="container">
+            <center>
+                <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
+                <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/JafarSalami" style="color:white;">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+                <p>&copy; Created by Ja'far Salami</p>
+                <br>
+            </center>
+          </div>
+    </div>
     
     <!-- Bootstrap core JavaScript
     ================================================== -->
