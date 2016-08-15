@@ -625,6 +625,13 @@ transition-delay:.2s;
   font-family: 'Cabin', sans-serif;
 }
 
+.indexParallax2{
+  min-height: 330px;
+  background: transparent;
+  margin-top: 0px;
+  font-family: 'Cabin', sans-serif;
+}
+
 hr.style12 {
 	height: 6px;
 	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
