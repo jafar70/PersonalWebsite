@@ -48,11 +48,13 @@
       </div>
     </nav>
     
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+    
     <div id="parallax-aboutus" class="parallax-container aboutusPara" style="min-height: 50px;margin-bottom:20px;" data-parallax="scroll" data-bleed="10" data-image-src="{{ url_for('static', filename='img/services-wallpaper.jpg') }}" data-natural-width="750" data-natural-height="763">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h1>Services</h1>
+              <h1 style="font-size:60px;">Services</h1>
             </div>
           </div>
         </div>
@@ -70,21 +72,21 @@
     </div>
     <div class="container">
       <div class="col-md-6">
-        <h2  class="text" style="text-align:center;color:black;"><i class="fa fa-mobile" aria-hidden="true" style="color:#ff6600;"></i> Responsive Development</h2>
+        <h1  class="text" style="text-align:center;color:black;font-size:30px;"><i class="fa fa-mobile" aria-hidden="true" style="color:#ff6600;"></i> Responsive Development</h1>
         <p class="textbody" style="text-align:center;">The web landscape is changing fast with the varying web enabled devices that are now available. I see this as a major development for web design as your customers demand information from different screen sizes.</p>
       </div>
       <div class="col-md-6">
-        <h2  class="text" style="text-align:center;color:black;"><i class="fa fa-wrench" aria-hidden="true" style="color:#ff6600;"></i> Front-end Web Development</h2>
+        <h2  class="text" style="text-align:center;color:black;font-size:30px;"><i class="fa fa-wrench" aria-hidden="true" style="color:#ff6600;"></i> Front-end Web Development</h2>
         <p class="textbody" style="text-align:center;">My introduction to HTML was in 2010 so I have had plenty of experience building websites for university and personal projects . I can code my own designs using the latest CSS3, HTML5 and JavaScript techniques.</p>
       </div>
     </div>
     <div class="container">
       <div class="col-md-6">
-        <h2  class="text" style="text-align:center;color:black;"><i class="fa fa-server" aria-hidden="true" style="color:#ff6600;"></i> Back-end Web Development </h2>
+        <h2  class="text" style="text-align:center;color:black;font-size:30px;"><i class="fa fa-server" aria-hidden="true" style="color:#ff6600;"></i> Back-end Web Development </h2>
         <p class="textbody" style="text-align:center;">In order to make the server, application, and database communicate with each other, I use server-side languages for example Python to build an application, and tools like MySQL to find, save, or change data and serve it back to the user in front-end code. </p>
       </div>
       <div class="col-md-6">
-        <h2  class="text" style="text-align:center;color:black;"><i class="fa fa-bullseye" aria-hidden="true" style="color:#ff6600;"></i> Project Management</h2>
+        <h2  class="text" style="text-align:center;color:black;font-size:30px;"><i class="fa fa-bullseye" aria-hidden="true" style="color:#ff6600;"></i> Project Management</h2>
         <p class="textbody" style="text-align:center;">I have been a project manager for three university projects, where I had to create Gantt and PERT chart to allocate, plan and coordinate tasks to each group members. I also had to carry out a risk assessment which highlighted all the potential risks that could happen during the project and how to overcome the problems if they arise.</p>
       </div>
       
@@ -107,5 +109,6 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/parallax.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>

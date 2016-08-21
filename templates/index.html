@@ -17,6 +17,7 @@
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/hover.css') }}" rel="stylesheet">    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/typed.js') }}"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
@@ -82,14 +83,16 @@
     </div>  
     
     <div class="parallax-container indexParallax text-center" data-parallax="scroll" data-bleed="10" data-image-src="{{ url_for('static', filename='img/black-wood-texture.jpg') }}" data-natural-width="750" data-natural-height="600">
-      <h1><strong>WHY DO I NEED A WEBSITE?</strong></h1>
-      <br>
-      <h2 style="color:white;"><span class="text-change"></span></h2>
+      <div class="wow zoomIn" data-wow-duration="2s" data-wow-delay=".25s">
+        <h1><strong>WHY DO I NEED A WEBSITE?</strong></h1>
+        <br>
+        <h2 style="color:white;"><span class="text-change"></span></h2>
+      </div>
     </div>
     
     <div class="white">
-      <div class="container">
         <p class="aboutmeheading text-center">MY TECHNICAL SKILLS</p>
+        <div class="container wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
         <hr class="style12">
         
         <div class="skillbar clearfix " data-percent="85%">
@@ -138,19 +141,20 @@
     </div>
     
     <div class="parallax-container indexParallax2 text-center" data-parallax="scroll" data-bleed="10" data-image-src="{{ url_for('static', filename='img/wallpaper2.jpg') }}" data-natural-width="750" data-natural-height="600">
-      <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i>
-      <h2><strong>"I found Jafar extremely helpful and professional and would<br> highly recommend him to anyone contemplating a new web site in the future"</strong></h2>
-      <br>
-      
+      <div class="wow zoomIn" data-wow-duration="2s" data-wow-delay=".25s">
+        <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i> <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+        <h2><strong>"I found Jafar extremely helpful and professional and would<br> highly recommend him to anyone contemplating a new web site in the future"</strong></h2>
+        <br>
+      </div>
     </div>
     
     <div class="white">
-      <div class="container">
-        <p class="aboutmeheading text-center">LATEST PROJECTS</p>
+      <p class="aboutmeheading text-center">LATEST PROJECTS</p>
+      <div class="container">  
         <hr class="style12">
         <p class="text text-center">Please see below for a selection of my recent work from my portfolio. Click on the images for more information on each project.</p>
-        <div class="col-md-3">
-          <div class="hovereffect">
+        <div class="col-md-3 wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
+          <div class="hovereffect" title="Mann's Solutions">
               <img class="img-responsive" src="{{ url_for('static', filename='img/photo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Mann's Solutions</h2>
@@ -158,17 +162,17 @@
               </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="hovereffect">
+        <div class="col-md-3 wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
+          <div class="hovereffect" title="Cloud 9">
               <center><img class="img-responsive" src="{{ url_for('static', filename='img/Cloud9logo.png') }}" width="255px" height="255px" alt=""></center>
               <div class="overlay">
                  <h2>Cloud 9</h2>
                  <a class="info" href="/cloud9">see project details</a>
               </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="hovereffect">
+        </div> 
+        <div class="col-md-3 wow slideInRight" data-wow-duration="2s" data-wow-delay=".25s">
+          <div class="hovereffect" title="Starfighter.io">
               <img class="img-responsive" src="{{ url_for('static', filename='img/starfighterlogo.png') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>starfighter.io</h2>
@@ -176,8 +180,8 @@
               </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="hovereffect">
+        <div class="col-md-3 wow slideInRight" data-wow-duration="2s" data-wow-delay=".25s">
+          <div class="hovereffect" title="DooWapp">
               <img class="img-responsive" src="{{ url_for('static', filename='img/doowapplogo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>DooWapp</h2>
@@ -206,8 +210,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/parallax.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="{{ url_for('static', filename='js/skillbar.js') }}"></script>
   </body>
 </html>
