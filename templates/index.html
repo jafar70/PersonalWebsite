@@ -16,17 +16,16 @@
     <!-- Custom styles for this template -->
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/hover.css') }}" rel="stylesheet">    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/eee93ac27c.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/typed.js') }}"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-
   </head>
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top" style="border-color: transparent;">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -51,6 +50,29 @@
       </div>
     </nav>
     
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+    
     <a href="#" class="back-to-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
     
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -69,7 +91,8 @@
          <img src="{{ url_for('static', filename='img/personalpic.jpg') }}" width="247px" height="247px" class="img-responsive center-block img-circle"></img>
          <br>
          <p class="aboutmeheading text-center">HELLO, I AM A 3<sup>rd</sup> YEAR BUSINESS INFORMATION TECHNOLOGY STUDENT AT COVENTRY UNIVERSITY</p>
-         <hr class="style12">
+        <hr class="zig">
+        <hr class="zag">
          <p class="text text-center">My name is Jafar Salami. I am 20 years old from London, UK and a third year Business Information Technology undergraduate at Coventry University on track to achieve a minimum of a 2:1. I am an ambitious, enthusiastic, hardworking and organised student.<br>
          I am currently looking for a graduate job as a front-end web developer.
          <br><br>
@@ -77,7 +100,8 @@
           Second Year University Result: Second-class honours, upper division (2:1)<br>
           Third Year University Result: First-class honours (1st) or Second-class honours, upper division (2:1) 
          </p>
-         <hr class="style12">
+         <hr class="zig">
+        <hr class="zag">
       </div>
     </div>
     </div>  
@@ -92,53 +116,62 @@
     
     <div class="white">
         <p class="aboutmeheading text-center">MY TECHNICAL SKILLS</p>
-        <div class="container wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
-        <hr class="style12">
+        <div class="container">
+        <hr class="zig">
+        <hr class="zag">
+        <div id="skills">
+       
+      <div class="skillbar clearfix " data-percent="85%">
+      	<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+      	<div class="skillbar-bar" style="background: #e67e22;"></div>
+      	<div class="skill-bar-percent">85%</div>
+      </div> <!-- End Skill Bar -->
+      
+      <div class="skillbar clearfix " data-percent="85%">
+      	<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+      	<div class="skillbar-bar" style="background: #3498db;"></div>
+      	<div class="skill-bar-percent">85%</div>
+      </div> <!-- End Skill Bar -->
+      
+      <div class="skillbar clearfix " data-percent="70%">
+      	<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
+      	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+      	<div class="skill-bar-percent">70%</div>
+      </div> <!-- End Skill Bar -->
+      
+      <div class="skillbar clearfix " data-percent="60%">
+      	<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+      	<div class="skillbar-bar" style="background: #5a68a5;"></div>
+      	<div class="skill-bar-percent">60%</div>
+      </div> <!-- End Skill Bar -->
+      
         
-        <div class="skillbar clearfix " data-percent="85%">
-        	<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
-        	<div class="skillbar-bar" style="background: #e67e22;"></div>
-        	<div class="skill-bar-percent">85%</div>
-        </div> <!-- End Skill Bar -->
-        
-        <div class="skillbar clearfix " data-percent="85%">
-        	<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
-        	<div class="skillbar-bar" style="background: #3498db;"></div>
-        	<div class="skill-bar-percent">85%</div>
-        </div> <!-- End Skill Bar -->
-        
-        <div class="skillbar clearfix " data-percent="70%">
-        	<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
-        	<div class="skillbar-bar" style="background: #2c3e50;"></div>
-        	<div class="skill-bar-percent">70%</div>
-        </div> <!-- End Skill Bar -->
-        
-        <div class="skillbar clearfix " data-percent="60%">
-        	<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
-        	<div class="skillbar-bar" style="background: #5a68a5;"></div>
-        	<div class="skill-bar-percent">60%</div>
-        </div> <!-- End Skill Bar -->
-        
-        <div class="skillbar clearfix " data-percent="65%">
-        	<div class="skillbar-title" style="background: #333333;"><span>Flask</span></div>
-        	<div class="skillbar-bar" style="background: #525252;"></div>
-        	<div class="skill-bar-percent">65%</div>
-        </div> <!-- End Skill Bar -->
-        
-        <div class="skillbar clearfix " data-percent="60%">
-        	<div class="skillbar-title" style="background: #27ae60;"><span>Wordpress</span></div>
-        	<div class="skillbar-bar" style="background: #2ecc71;"></div>
-        	<div class="skill-bar-percent">60%</div>
-        </div> <!-- End Skill Bar -->
-        
-        <div class="skillbar clearfix " data-percent="80%">
-        	<div class="skillbar-title" style="background: #124e8c;"><span>Git</span></div>
-        	<div class="skillbar-bar" style="background: #4288d0;"></div>
-        	<div class="skill-bar-percent">80%</div>
-        </div> <!-- End Skill Bar -->
-        <hr class="style12">
+      <div class="skillbar clearfix " data-percent="65%">
+      	<div class="skillbar-title" style="background: #333333;"><span>Flask</span></div>
+      	<div class="skillbar-bar" style="background: #525252;"></div>
+      	<div class="skill-bar-percent">65%</div>
+      </div> <!-- End Skill Bar -->
+      
+      <div class="skillbar clearfix " data-percent="60%">
+      	<div class="skillbar-title" style="background: #27ae60;"><span>Wordpress</span></div>
+      	<div class="skillbar-bar" style="background: #2ecc71;"></div>
+      	<div class="skill-bar-percent">60%</div>
+      </div> <!-- End Skill Bar -->
+      
+      <div class="skillbar clearfix " data-percent="80%">
+      	<div class="skillbar-title" style="background: #124e8c;"><span>Git</span></div>
+      	<div class="skillbar-bar" style="background: #4288d0;"></div>
+      	<div class="skill-bar-percent">80%</div>
+      </div> <!-- End Skill Bar -->
       </div>
+        
+        <hr class="zig">
+        <hr class="zag">
+      </div>
+      
+      
     </div>
+    
     
     <div class="parallax-container indexParallax2 text-center" data-parallax="scroll" data-bleed="10" data-image-src="{{ url_for('static', filename='img/wallpaper2.jpg') }}" data-natural-width="750" data-natural-height="600">
       <div class="wow zoomIn" data-wow-duration="2s" data-wow-delay=".25s">
@@ -151,7 +184,8 @@
     <div class="white">
       <p class="aboutmeheading text-center">LATEST PROJECTS</p>
       <div class="container">  
-        <hr class="style12">
+        <hr class="zig">
+        <hr class="zag">
         <p class="text text-center">Please see below for a selection of my recent work from my portfolio. Click on the images for more information on each project.</p>
         <div class="col-md-3 wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
           <div class="hovereffect" title="Mann's Solutions">
@@ -191,7 +225,8 @@
         </div>
       </div>
       <div class="container">
-        <hr class="style12">
+        <hr class="zig">
+        <hr class="zag">
       </div>
     </div>  
 
@@ -200,7 +235,7 @@
           <center>
               <p style="font-size:25px;">E-Mail: <a href="mailto:jafsalami@hotmail.co.uk" style="color:white;">jafsalami@hotmail.co.uk</a></p>
               <p style="font-size:16px;"><a href="https://uk.linkedin.com/in/jafarosalami" style="color:white;">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://github.com/jafar70" style="color:white;">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp&nbsp&nbsp&nbsp<a href="https://twitter.com/JafarSalami" style="color:white;">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></p>
-              <p>&copy; Created by Ja'far Salami</p>
+              <p style="font-size:16px;">&copy; Created by Ja'far Salami</p>
               <br>
           </center>
         </div>

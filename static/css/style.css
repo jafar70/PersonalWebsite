@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700');
+
+
 body {
   padding-top: 50px;
   background-color:white;
   color: black;
   font-size:17px;
+}
+
+html,body
+{
+    
+    overflow-x: hidden; 
 }
 
 .jumbotron-special{
@@ -126,25 +138,24 @@ ul li span {
 span{
   color:#ff6600;
 }
-.navbar-inverse {min-height:50px;}
 
-.navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #080808}
-.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #080808}
+.navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: transparent;}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: transparent;}
 .dropdown-menu { background-color: #222222}
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #080808}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: transparent;}
 .navbar-inverse { background-image: none; }
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
-.navbar-inverse { border-color: #222222}
+.navbar-inverse { border-color: transparent;}
 .navbar-inverse .navbar-brand { color: #FF6600}
 .navbar-inverse .navbar-brand:hover { color: #FF6600}
-.navbar-inverse .navbar-nav>li>a { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a { color: #FFFFFF; font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;text-transform: uppercase;font-weight: 400;letter-spacing: 1px; }
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FF6600}
 .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
 .dropdown-menu>li>a { color: #FFFFFF}
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
-.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: transparent;}
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
 
@@ -152,6 +163,21 @@ span{
 
    body { font-size: 70px; }
 
+}
+
+.navbar-brand {
+  color: #fed136;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;  
+  font-size: 2em;
+  padding-top: 16px;
+}
+
+@media (min-width:768px) {
+  .navbar-brand {
+      color: #fed136;
+      font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+      font-size: 2em;
+  }
 }
 
 a.back-to-top {
@@ -323,33 +349,20 @@ span.text-change {
   color:white;
 }
 
-.navbar-nav{
-  min-height:60px;
-}
-.navbar-brand{
-  padding-top:20px;
-  height:60px;
-}
-.navbar-nav .active{
-  min-height:60px;
-}
-.navbar-header{
-  height:60px;
-}
 
 
 
 .navbar-inverse {
-  border-color: black;
+  border-color: transparent;
   
 }
 
-      
-.navbar-left >li>a{
-  padding-top:20px;
-  margin-bottom:0px;
-  height:60px;
-}
+.navbar-right > li > a{
+  padding-top: 0px;
+  margin-top: 10px;
+}     
+
+
 
 
 .navbar-inverse .navbar-nav >li> a:hover,
@@ -361,7 +374,25 @@ span.text-change {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus{
   color: #FF6600;
+  background-color:#222;
 }
+
+/* Collapsing Navbar Styles */
+
+@media(min-width:768px) {
+  .navbar-inverse {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    padding: 20px 0;
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+  .navbar-inverse.affix {
+    padding: 7px;
+    /* Add additional styles here for the COLLAPSED state */
+  }
+}
+
 
 .jafar h1{
   color: black;
@@ -425,11 +456,11 @@ width:110px;
 
 .skillbar-title span {
 	display:block;
-	color:#ffffff;
 	background:rgba(0, 0, 0, 0.1);
 	padding:0 20px;
 	height:35px;
 	line-height:35px;
+	color:#ffffff;
 	-webkit-border-top-left-radius:3px;
 	-webkit-border-bottom-left-radius:3px;
 	-moz-border-radius-topleft:3px;
@@ -447,9 +478,30 @@ width:110px;
 	-webkit-border-radius:3px;
 }
 
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
 .fa-star{
   color:gold;
+  font-size:45px !important;
 }
+
+@media (max-width:320px)  {
+  .fa-star{
+    color:gold;
+    font-size:30px !important;
+  }
+}
+
+
 
 .skill-bar-percent {
 	position:absolute;
@@ -632,10 +684,30 @@ transition-delay:.2s;
   font-family: 'Cabin', sans-serif;
 }
 
-hr.style12 {
-	height: 6px;
-	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
-    border: 0;
+hr.zig, hr.zag {
+  border: none;
+  height: 30px;
+  margin: 0 50px;
+}
+
+hr.zig{
+  background: linear-gradient(-135deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 100;
+  position: relative;
+}
+
+hr.zag {
+  background: linear-gradient(-135deg, #333 20px, rgba(0, 0, 0, 0) 0) 0 5px, linear-gradient(135deg, #333 20px, #FFF 0) 0 5px;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 50;
+  margin-top: -28px;
 }
 
 .col-md-6{

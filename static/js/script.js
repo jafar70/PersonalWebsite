@@ -39,5 +39,21 @@ $(document).ready(function(){
         scrollTop: $("#aboutme").offset().top - 50
     }, 2000);
     });
-
+    
+    $('#mainNav').affix({
+      offset: {
+        top: 100
+      }
+    })
+    
+    $(document).scroll(function(){
+    if($(this).scrollTop() > 50)
+    {   
+       $('.navbar-inverse .navbar-brand').css({"font-size":"21px"});
+    } else {
+       $('.navbar-inverse .navbar-brand').css({"font-size":"2em"});
+    }
+});
 })
+
+

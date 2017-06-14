@@ -8,10 +8,10 @@ mail = Mail()
 app = Flask(__name__)
 app.secret_key = 'development key'
 
-app.config["MAIL_SERVER"] = "smtp.mail.yahoo.com"
-app.config["MAIL_PORT"] = 465
+app.config["MAIL_SERVER"] = "smtp.mail.com"
+app.config["MAIL_PORT"] = 993
 app.config["MAIL_USE_SSL"] = True
-app.config["MAIL_USERNAME"] = 'jafsalami@yahoo.com'
+app.config["MAIL_USERNAME"] = 'jafarocean@mail.com'
 app.config["MAIL_PASSWORD"] = 'Osalami20_'
 
 mail.init_app(app)
