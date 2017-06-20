@@ -24,47 +24,51 @@ def index():
 def portfolio():
     return render_template("portfolio.html")
     
-@app.route("/cusu")
+@app.route("/portfolio/cusu")
 def cusu():
     return render_template("cusu.html")
     
-@app.route("/fdm")
+@app.route("/portfolio/fdm")
 def fdm():
     return render_template("fdm.html")
     
-@app.route("/jcci")
-def jcci():
-    return render_template("jcci.html")
+@app.route("/portfolio/studentsupport")
+def studentsupport():
+    return render_template("studentsupport.html")
     
-@app.route("/mannssolutions")
+@app.route("/portfolio/mannssolutions")
 def mannssolutions():
     return render_template("mannssolutions.html")    
 
-@app.route("/niyati")
+@app.route("/portfolio/niyati")
 def niyati():
     return render_template("niyati.html")
 
-@app.route("/cloud9")
+@app.route("/portfolio/cloud9")
 def cloud9():
     return render_template("c9.html")
     
-@app.route("/jagsdrivingschool")
-def jagsdrivingschool():
-    return render_template("jags.html")
+@app.route("/portfolio/webapi")
+def webapi():
+    return render_template("webapi.html")
     
-@app.route("/starfighter")
+@app.route("/portfolio/starfighter")
 def starfighter():
     return render_template("starfighter.html")
     
-@app.route("/doowapp")
-def doowapp():
-    return render_template("doowapp.html")
+@app.route("/portfolio/qube")
+def qube():
+    return render_template("qube.html")
+
+@app.route("/portfolio/aaronclarey")
+def aaronclarey():
+    return render_template("aaronclarey.html")
     
-@app.route("/visdata")
+@app.route("/portfolio/visdata")
 def visdata():
     return render_template("visdata.html")
     
-@app.route("/westfield")
+@app.route("/portfolio/westfield")
 def westfield():
     return render_template("westfield.html")
 

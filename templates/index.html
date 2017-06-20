@@ -42,9 +42,9 @@
             <li><a href="/contact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://github.com/jafar70"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-            <li><a href="https://uk.linkedin.com/in/jafarosalami"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/JafarSalami"><i class="fa fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/jafar70" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/jafarosalami" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/JafarSalami" target="_blank"><i class="fa fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -93,12 +93,12 @@
          <p class="aboutmeheading text-center">HELLO, I AM A 3<sup>rd</sup> YEAR BUSINESS INFORMATION TECHNOLOGY STUDENT AT COVENTRY UNIVERSITY</p>
         <hr class="zig">
         <hr class="zag">
-         <p class="text text-center">My name is Jafar Salami. I am 20 years old from London, UK and a third year Business Information Technology undergraduate at Coventry University on track to achieve a minimum of a 2:1. I am an ambitious, enthusiastic, hardworking and organised student.<br>
+         <p class="text text-center">My name is Jafar Salami. I am 21 years old from London, UK and a Business Information Technology graduate from Coventry University who achieved a 2:1. I am an ambitious, enthusiastic, hardworking and organised student.<br>
          I am currently looking for a graduate job as a front-end web developer.
          <br><br>
-          First Year University Result: Second-class honours, upper division  (2:1)<br>
-          Second Year University Result: Second-class honours, upper division (2:1)<br>
-          Third Year University Result: First-class honours (1st) or Second-class honours, upper division (2:1) 
+          First Year University Result:  Upper Second-Class Honours (2:1)<br>
+          Second Year University Result:  Upper Second-Class Honours (2:1)<br>
+          Third Year University Result:  Upper Second-Class Honours (2:1) 
          </p>
          <hr class="zig">
         <hr class="zag">
@@ -187,42 +187,45 @@
         <hr class="zig">
         <hr class="zag">
         <p class="text text-center">Please see below for a selection of my recent work from my portfolio. Click on the images for more information on each project.</p>
-        <div class="col-md-3 wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
-          <div class="hovereffect" title="Mann's Solutions">
+        <div class = "col-md-3 portfolioimg">
+              <div class="hovereffect" title="Mann's Solutions">
               <img class="img-responsive" src="{{ url_for('static', filename='img/photo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Mann's Solutions</h2>
-                 <a class="info" href="/mannssolutions">see project details</a>
+                 <a class="info" href="/portfolio/mannssolutions">see project details</a>
               </div>
-          </div>
-        </div>
-        <div class="col-md-3 wow slideInLeft" data-wow-duration="2s" data-wow-delay=".25s">
-          <div class="hovereffect" title="Cloud 9">
-              <center><img class="img-responsive" src="{{ url_for('static', filename='img/Cloud9logo.png') }}" width="255px" height="255px" alt=""></center>
+            </div>
+            </div>
+            
+            <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect"   title="Student Support">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/Sigma (1).png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Student Support</h2>
+                 <a class="info" href="/portfolio/studentsupport">see project details</a>
+              </div>
+            </div>
+           </div>
+            
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect" title="Qube" >
+              <img class="img-responsive" src="{{ url_for('static', filename='img/qubebulb.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Qube</h2>
+                 <a class="info" href="/portfolio/qube">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect"   title="Cloud 9">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/Cloud9logo.png') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Cloud 9</h2>
-                 <a class="info" href="/cloud9">see project details</a>
+                 <a class="info" href="/portfolio/cloud9">see project details</a>
               </div>
-          </div>
-        </div> 
-        <div class="col-md-3 wow slideInRight" data-wow-duration="2s" data-wow-delay=".25s">
-          <div class="hovereffect" title="Starfighter.io">
-              <img class="img-responsive" src="{{ url_for('static', filename='img/starfighterlogo.png') }}" width="255px" height="255px" alt="">
-              <div class="overlay">
-                 <h2>starfighter.io</h2>
-                 <a class="info" href="/starfighter">see project details</a>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-3 wow slideInRight" data-wow-duration="2s" data-wow-delay=".25s">
-          <div class="hovereffect" title="DooWapp">
-              <img class="img-responsive" src="{{ url_for('static', filename='img/doowapplogo.jpg') }}" width="255px" height="255px" alt="">
-              <div class="overlay">
-                 <h2>DooWapp</h2>
-                 <a class="info" href="/doowapp">see project details</a>
-              </div>
-          </div>
-        </div>
+            </div>
+           </div>
       </div>
       <div class="container">
         <hr class="zig">

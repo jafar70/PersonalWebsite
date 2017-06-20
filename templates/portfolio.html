@@ -40,9 +40,9 @@
             <li><a href="/contact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://github.com/jafar70"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-            <li><a href="https://uk.linkedin.com/in/jafarosalami"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/JafarSalami"><i class="fa fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/jafar70" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://uk.linkedin.com/in/jafarosalami" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/JafarSalami" target="_blank"><i class="fa fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -72,7 +72,7 @@
     <div class="container">
     	<ul class="tabs">
     		<li class="tab-link current" data-tab="tab-1">All</li>
-    		<li class="tab-link" data-tab="tab-2">Personal</li>
+    		<li class="tab-link" data-tab="tab-2">Personal Projects</li>
     		<li class="tab-link" data-tab="tab-3">University Projects</li>
     		<li class="tab-link" data-tab="tab-4">App</li>
     	</ul>
@@ -83,17 +83,27 @@
               <img class="img-responsive" src="{{ url_for('static', filename='img/photo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Mann's Solutions</h2>
-                 <a class="info" href="/mannssolutions">see project details</a>
+                 <a class="info" href="/portfolio/mannssolutions">see project details</a>
               </div>
             </div>
             </div>
             
-           <div class = "col-md-3 portfolioimg">
-             <div class="hovereffect"   title="Niyati">
-              <img class="img-responsive" src="{{ url_for('static', filename='img/niyatilogo.jpg') }}" width="255px" height="255px" alt="">
+            <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect"   title="Student Support">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/Sigma (1).png') }}" width="255px" height="255px" alt="">
               <div class="overlay">
-                 <h2>Niyati</h2>
-                 <a class="info" href="/niyati">see project details</a>
+                 <h2>Student Support</h2>
+                 <a class="info" href="/portfolio/studentsupport">see project details</a>
+              </div>
+            </div>
+           </div>
+            
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect" title="Qube" >
+              <img class="img-responsive" src="{{ url_for('static', filename='img/qubebulb.jpg') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Qube</h2>
+                 <a class="info" href="/portfolio/qube">see project details</a>
               </div>
             </div>
            </div>
@@ -103,17 +113,7 @@
               <img class="img-responsive" src="{{ url_for('static', filename='img/Cloud9logo.png') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Cloud 9</h2>
-                 <a class="info" href="/cloud9">see project details</a>
-              </div>
-            </div>
-           </div>
-          
-           <div class = "col-md-3 portfolioimg">
-             <div class="hovereffect" title="Starfighter.io" >
-              <img class="img-responsive" src="{{ url_for('static', filename='img/starfighterlogo.png') }}" width="255px" height="255px" alt="">
-              <div class="overlay">
-                 <h2>starfighter.io</h2>
-                 <a class="info" href="/starfighter">see project details</a>
+                 <a class="info" href="/portfolio/cloud9">see project details</a>
               </div>
             </div>
            </div>
@@ -121,21 +121,32 @@
       </div>
     <div class="container">
            <div class = "col-md-3 portfolioimg">
-             <div class="hovereffect"  title="Jags Driving School">
-              <img class="img-responsive" src="{{ url_for('static', filename='img/jagslogo.jpeg') }}" width="255px" height="255px" alt="">
+             <div class="hovereffect"   title="Niyati">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/niyatilogo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
-                 <h2>Jags Driving School</h2>
-                 <a class="info" href="/jagsdrivingschool">see project details</a>
+                 <h2>Niyati</h2>
+                 <a class="info" href="/portfolio/niyati">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect"  title="API">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/mindtouch.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>API</h2>
+                 <a class="info" href="/portfolio/webapi">see project details</a>
               </div>
             </div>
            </div>
            
            <div class = "col-md-3 portfolioimg">
-             <div class="hovereffect"  title="DooWapp">
-              <img class="img-responsive" src="{{ url_for('static', filename='img/doowapplogo.jpg') }}" width="255px" height="255px" alt="">
+             <div class="hovereffect" title="Aaron Clarey Consulting">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/Aaron-Clarey-160x160.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
-                 <h2>DooWapp</h2>
-                 <a class="info" href="/doowapp">see project details</a>
+                 <h2>Aaron Clarey Consulting</h2>
+                 <a class="info" href="/portfolio/aaronclarey">see project details</a>
               </div>
             </div>
            </div>
@@ -145,7 +156,22 @@
               <img class="img-responsive" src="{{ url_for('static', filename='img/visdatalogo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Visdata</h2>
-                 <a class="info" href="/visdata">see project details</a>
+                 <a class="info" href="/portfolio/visdata">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           
+           
+    </div>     
+    
+    <div class="container">
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect" title="Starfighter.io" >
+              <img class="img-responsive" src="{{ url_for('static', filename='img/starfighterlogo.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>starfighter.io</h2>
+                 <a class="info" href="/portfolio/starfighter">see project details</a>
               </div>
             </div>
            </div>
@@ -155,30 +181,18 @@
               <img class="img-responsive" src="{{ url_for('static', filename='img/cusulogo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Coventry University Student Union</h2>
-                 <a class="info" href="/cusu">see project details</a>
+                 <a class="info" href="/portfolio/cusu">see project details</a>
               </div>
             </div>
            </div>
            
-    </div>     
-    
-    <div class="container">
+           
            <div class = "col-md-3 portfolioimg">
              <div class="hovereffect"  title="FDM">
               <img class="img-responsive" src="{{ url_for('static', filename='img/fdmlogo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>FDM</h2>
-                 <a class="info" href="/fdm">see project details</a>
-              </div>
-            </div>
-           </div>
-           
-           <div class = "col-md-3 portfolioimg">
-             <div class="hovereffect"  title="JCCI">
-              <img class="img-responsive" src="{{ url_for('static', filename='img/churchlogo.png') }}" width="255px" height="255px" alt="">
-              <div class="overlay">
-                 <h2>JCCI</h2>
-                 <a class="info" href="/jcci">see project details</a>
+                 <a class="info" href="/portfolio/fdm">see project details</a>
               </div>
             </div>
            </div>
@@ -188,7 +202,7 @@
               <img class="img-responsive" src="{{ url_for('static', filename='img/westfieldlogo.png') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Westfield</h2>
-                 <a class="info" href="/westfield">see project details</a>
+                 <a class="info" href="/portfolio/westfield">see project details</a>
               </div>
             </div>
            </div>
@@ -201,37 +215,37 @@
               <img class="img-responsive" src="{{ url_for('static', filename='img/photo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Mann's Solutions</h2>
-                 <a class="info" href="/mannssolutions">see project details</a>
+                 <a class="info" href="/portfolio/mannssolutions">see project details</a>
               </div>
             </div>
             </div>
             
            <div class = "col-md-3 portfolioimg">
-             <div class="hovereffect" title="Niyati">
-              <img class="img-responsive" src="{{ url_for('static', filename='img/niyatilogo.jpg') }}" width="255px" height="255px" alt="">
+             <div class="hovereffect" title="Qube" >
+              <img class="img-responsive" src="{{ url_for('static', filename='img/qubebulb.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
-                 <h2>Niyati</h2>
-                 <a class="info" href="/niyati">see project details</a>
+                 <h2>Qube</h2>
+                 <a class="info" href="/portfolio/qube">see project details</a>
               </div>
             </div>
            </div>
            
            <div class = "col-md-3 portfolioimg">
-             <div class="hovereffect" title="Cloud 9">
+             <div class="hovereffect"   title="Cloud 9">
               <img class="img-responsive" src="{{ url_for('static', filename='img/Cloud9logo.png') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Cloud 9</h2>
-                 <a class="info" href="/cloud9">see project details</a>
+                 <a class="info" href="/portfolio/cloud9">see project details</a>
               </div>
             </div>
            </div>
-          
+           
            <div class = "col-md-3 portfolioimg">
-             <div class="hovereffect" title="Starfighter.io">
-              <img class="img-responsive" src="{{ url_for('static', filename='img/starfighterlogo.png') }}" width="255px" height="255px" alt="">
+             <div class="hovereffect"   title="Niyati">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/niyatilogo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
-                 <h2>starfighter.io</h2>
-                 <a class="info" href="/starfighter">see project details</a>
+                 <h2>Niyati</h2>
+                 <a class="info" href="/portfolio/niyati">see project details</a>
               </div>
             </div>
            </div>
@@ -239,21 +253,11 @@
       </div>
     <div class="container">
            <div class = "col-md-3 portfolioimg">
-             <div class="hovereffect" title="Jags Driving School">
-              <img class="img-responsive" src="{{ url_for('static', filename='img/jagslogo.jpeg') }}" width="255px" height="255px" alt="">
+             <div class="hovereffect" title="Aaron Clarey Consulting">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/Aaron-Clarey-160x160.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
-                 <h2>Jags Driving School</h2>
-                 <a class="info" href="/jagsdrivingschool">see project details</a>
-              </div>
-            </div>
-           </div>
-           
-           <div class = "col-md-3 portfolioimg">
-             <div class="hovereffect" title="DooWapp">
-              <img class="img-responsive" src="{{ url_for('static', filename='img/doowapplogo.jpg') }}" width="255px" height="255px" alt="">
-              <div class="overlay">
-                 <h2>DooWapp</h2>
-                 <a class="info" href="/doowapp">see project details</a>
+                 <h2>Aaron Clarey Consulting</h2>
+                 <a class="info" href="/portfolio/aaronclarey">see project details</a>
               </div>
             </div>
            </div>
@@ -263,7 +267,17 @@
               <img class="img-responsive" src="{{ url_for('static', filename='img/visdatalogo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Visdata</h2>
-                 <a class="info" href="/visdata">see project details</a>
+                 <a class="info" href="/portfolio/visdata">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect" title="Starfighter.io" >
+              <img class="img-responsive" src="{{ url_for('static', filename='img/starfighterlogo.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>starfighter.io</h2>
+                 <a class="info" href="/portfolio/starfighter">see project details</a>
               </div>
             </div>
            </div>
@@ -274,11 +288,31 @@
     	<div id="tab-3" class="tab-content">
     		<div class="container">
     		  <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect"   title="Student Support">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/Sigma (1).png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>Student Support</h2>
+                 <a class="info" href="/portfolio/studentsupport">see project details</a>
+              </div>
+            </div>
+           </div>
+           
+           <div class = "col-md-3 portfolioimg">
+             <div class="hovereffect"  title="API">
+              <img class="img-responsive" src="{{ url_for('static', filename='img/mindtouch.png') }}" width="255px" height="255px" alt="">
+              <div class="overlay">
+                 <h2>API</h2>
+                 <a class="info" href="/portfolio/webapi">see project details</a>
+              </div>
+            </div>
+           </div>
+    		  
+    		  <div class = "col-md-3 portfolioimg">
              <div class="hovereffect" title="Coventry University Student Union">
               <img class="img-responsive" src="{{ url_for('static', filename='img/cusulogo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Coventry University Student Union</h2>
-                 <a class="info" href="/cusu">see project details</a>
+                 <a class="info" href="/portfolio/cusu">see project details</a>
               </div>
             </div>
           </div>
@@ -288,7 +322,7 @@
               <img class="img-responsive" src="{{ url_for('static', filename='img/fdmlogo.jpg') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>FDM</h2>
-                 <a class="info" href="/fdm">see project details</a>
+                 <a class="info" href="/portfolio/fdm">see project details</a>
               </div>
             </div>
            </div>
@@ -303,7 +337,7 @@
               <img class="img-responsive" src="{{ url_for('static', filename='img/westfieldlogo.png') }}" width="255px" height="255px" alt="">
               <div class="overlay">
                  <h2>Westfield</h2>
-                 <a class="info" href="/westfield">see project details</a>
+                 <a class="info" href="/portfolio/westfield">see project details</a>
               </div>
             </div>
            </div>
